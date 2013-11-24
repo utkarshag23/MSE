@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/textstyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+<!-- Default style of button is android:buttonStyle -->
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/textstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="74dp"
+        android:text="Pharmacy"
+        android:textColor="#000000"
+        android:textStyle="normal|bold|italic" />
+
+    <Button
+        android:id="@+id/PlaceOrder"
+        style="@style/buttonstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="144dp"
+        android:background="#def640"
+        android:text="Order"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/CheckList"
+        style="@style/buttonstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PlaceOrder"
+        android:layout_alignBottom="@+id/PlaceOrder"
+        android:layout_marginLeft="45dp"
+        android:layout_toRightOf="@+id/PlaceOrder"
+        android:background="#def640"
+        android:text="Record"
+        android:textColor="#000000" />
+
+</RelativeLayout>
